@@ -1,75 +1,3 @@
-_G.Kaitun = true
-_G.Config = true
-_G.Setting = {
-    Main = {
-        ["Auto Farm Level"] = true,
-        ["StoreFruit"] = true,
-        ["BuyFruit"] = true,
-        ["SelectFruit"] = {
-            "Lepoard-Lepoard",
-			"Ice-Ice",
-			"Linght-Linght"
-        },
-        --[[
-			Kilo-Kilo
-			Spin-Spin
-			Chop-Chop
-			Spring-Spring
-			Bomb-Bomb
-			Smoke-Smoke
-			Spike-Spike
-			Flame-Flame
-			Falcon-Falcon
-			Ice-Ice
-			Sand-Sand
-			Dark-Dark
-			Revive-Revive
-			Diamond-Diamond
-			Linght-Linght
-			Rubber-Rubber
-			Barber-Barber
-			Magma-Magma
-			Quake-Quake
-			Buddha-Buddha
-			Love-Love
-			Spider-Spider
-			Phoenix-Phoenix
-			Portal-Portal
-			Rumble-Rumble
-			Paw-Paw
-			Blizzard-Blizzard
-			Gravity-Gravity
-			Dough-Dough
-			Shadow-Shadow
-			Venom-Venom
-			Control-Control
-			Spirit-Spirit
-			Dragon-Dragon
-			Leopard-Leopard
-		]]
------------// Setting \\-----------
-        ["Auto Buso"] = true,
-        ["Fast Attack"] = true,
-------------// Sea 1 \\---------------
-        ["Auto Saber"] = true,
-        ["Auto Pole"] = true,
-        ["AutoSecondSea"] = true,
-------------// Sea 2 \\---------------
-        ["Auto Bartilo Quest"] = true,
-        ["Auto Rengoku"] = true,
-        ["Auto Flamingo Access"] = true,
-        ["Auto Factory Farm"] = true,
-        ["Auto Super Human"] = true,
-        ["Midnight Blade"] = true,
-------------// Sea 3 \\---------------
-        ["Auto Farm Mastery Sword All"] = true,
-        ["Auto Soul Guitar"] = true,
-        ["Auto ElectricClaw"] = true,
-        ["Auto Yama"] = true,
-        ["Auto Tushita"] = true,
-    },
-}
-
 local Level_Max = 2550
 --------------------------------// Sea \\----------------------------
 local placeId = game.PlaceId
@@ -3622,3 +3550,5 @@ if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectric
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
 	end
 end
+
+OrionLib:Init()
